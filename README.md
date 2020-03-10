@@ -1,5 +1,6 @@
-* SRFI 47: Array
-- Copyright (C) 2001, 2003, 2005, 2006 Aubrey Jaffer
+# SRFI 47 for CL: Array
+
+* Copyright (C) 2001, 2003, 2005, 2006 Aubrey Jaffer
 
 Permission to copy this software, to modify it, to redistribute it,
 to distribute modified versions, and to use it for any purpose is

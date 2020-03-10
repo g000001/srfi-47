@@ -1,8 +1,8 @@
-(cl:in-package :srfi-47.internal)
+(cl:in-package "https://github.com/g000001/srfi-47#internals")
 
-(def-suite srfi-47)
 
-(in-suite srfi-47)
+(def-suite* srfi-47)
+
 
 (test equal?
   (is-true (equal? 'a 'a))
@@ -16,6 +16,7 @@
   (is-true (equal? (make-array (Au32 4) 5 3)
                    (make-array (Au32 4) 5 3))))
 
+
 (test fred
   (let* ((fred (make-array '#(nil) 8 8))
          (freds-diagonal
@@ -28,8 +29,10 @@
                              2 2))
     (is (eq 'foo (array-ref freds-center 0 0)))))
 
+
 (test array-dimensions
   (is (equal (array-dimensions (make-array '#() 3 5))
              '(3 5))))
 
-;;; eof
+
+;;; *EOF*
